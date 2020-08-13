@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Vogue";
+    src: url('Vogue.ttf');
+}
+@font-face {
+    font-family: "Coolvetica";
+    src: url('coolvetica.ttf');
+}
+body{ 
+    background-color:rgb(253, 255, 233);
+    margin:0;
+    overflow-x: hidden;
+    font-family: "Coolvetica";
+    text-align: center;
+    color: rgb(95, 73, 58);
+}
+.main{
+    background-image: repeating-linear-gradient(45deg, rgb(251, 183, 226)30px, rgb(251, 183, 226) 40px, rgb(131, 184, 175) 40px, rgb(131, 184, 175) 60px, rgb(253, 255, 233) 60px, rgb(253, 255, 233)70px, rgb(95, 73, 58) 70px, rgb(95, 73, 58) 90px, rgb(179, 218, 210) 90px, rgb(179, 218, 210) 110px);
+    margin:0;
+    display:inline-block;
+    width: 700px; 
+    padding: 5%;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+h1{
+    font-family: "Vogue";
+    font-weight:bolder;
+    font-size: 100px;
+    color: rgb(179, 218, 210);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(179, 218, 210);
+    -moz-text-stroke-width: 1.5px;
+    -moz-text-stroke-color: rgb(179, 218, 210);
+    -o-text-stroke-width: 1.5px;
+    -o-text-stroke-color: rgb(179, 218, 210);
+    letter-spacing: 10px;
+}
+#grid {
+    height: 600px;
+    width: 600px;
+    display:inline-flex;
+    flex-wrap:wrap;
+    background-color: white;
+    border: 10px solid rgb(179, 218, 210);
+    padding:10px;
+    border-radius: 40px;
+}
+#instruction{
+    width: 90%;
+    font-size: 25px;
+    padding:5%;
+    height: inherit;
+    background-color:rgb(95, 73, 58);
+    visibility:visible;
+    color:white;
+}
+#scoreboard{
+    color:rgb(60, 78, 80); 
+    width: 80%; 
+    display:inline-flex; 
+    flex-wrap:nowrap; 
+    justify-content: space-evenly; 
+    font-size: 20px;
+    background-color: rgb(131, 184, 175);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+audio{
+    
+}
+/* #grid div{
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+} */
+#grid div:hover{
+    transform: scale(1.06);
+    cursor:pointer;
+}
+#author{
+    transform:translateX(15%)translateY(-50px);
+}
+@media only screen and (max-width: 700px) 
+{
+    .main{
+        width: 350px;
+        height:inherit;
+    }
+    #grid{
+        height: 300px;
+        width: 300px;
+    }
+    body{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    #author{
+        transform:translateX(15%);
+    }
+    
+} 
