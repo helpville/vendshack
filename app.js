@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         checkColumnN();
         checkDgLN();
         checkDgRN();
-    }, 0.5);
+    }, 50);
 
 
 });
