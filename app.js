@@ -1,6 +1,5 @@
 //jshint esversion:8
 document.addEventListener('DOMContentLoaded', ()=>{
-    const audio = document.querySelector("audio");
     const grid = document.getElementById("grid");
     let w = 5;
     let sq = [];
@@ -16,17 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // on level up window freezes at other times it seems like it freezes too
    
     const allTypes = ['bagel.svg', 'battery.svg', 'lollipop.svg','doughnut.svg', 'icecream.svg', 'tomato.svg','lollipop2.svg', 'lollipop3.svg','lollipop4.svg', 'egg.svg', 'soda.svg', 'jellybean.svg','jellybean2.svg','jellybean3.svg','jellybean4.svg','orange.svg','chips.svg', 'candycane.svg', 'coin.svg'];
-
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if (!isChrome){
-        document.getElementById('#iframeAudio').remove();
-        // audio.play();
-    }
-    else {
-        audio.remove(); 
-        (document.getElementById('#iframeAudio'));
-    }
-
+    
     const footer = document.getElementsByClassName('footer')[0];
     const dt = new Date();
     const yr = dt.getFullYear();
