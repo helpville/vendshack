@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let wmax = 9;
     const instruction = document.getElementById('instruction');
     
-    instruction.innerHTML = "<br>Get three or more items in a row and level up once you pass the 'Score To Beat.' Some levels come with new vending machine goodies! Move vending machine items left, right, up, down or diagonally one step. Start playing now!"
+    instruction.innerHTML = "Get three or more items in a row and level up once you pass the 'Score To Beat.' Some levels come with new vending machine goodies! Move vending machine items left, right, up, down or diagonally one step. Start playing now!"
  
    
     const allTypes = ['bagel.svg', 'battery.svg', 'lollipop.svg','doughnut.svg', 'icecream.svg', 'tomato.svg','lollipop2.svg', 'lollipop3.svg','lollipop4.svg', 'egg.svg', 'soda.svg', 'jellybean.svg','jellybean2.svg','jellybean3.svg','jellybean4.svg','orange.svg','chips.svg', 'candycane.svg', 'coin.svg'];
