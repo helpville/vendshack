@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let types = ['bagel.svg','battery.svg','lollipop.svg' ];
     let wmax = 9;
     const instruction = document.getElementById('instruction');
-
+    
     instruction.innerHTML = "<br>Get three or more items in a row and level up once you pass the 'Score To Beat.' Some levels come with new vending machine goodies! Move vending machine items left, right, up, down or diagonally one step. Start playing now!"
  
     //to do 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             if (score >= passingscore){
                 if (lvl % 1 === 0){
                     types.push(allTypes[toAdd]);
-                    if(toAdd < allTypes.length){
+                    if(toAdd < allTypes.length-1){
                         toAdd++;
                     }
             
